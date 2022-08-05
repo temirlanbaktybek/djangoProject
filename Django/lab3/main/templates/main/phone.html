@@ -1,0 +1,80 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block phone_img %}
+	<img src="{%static 'main/img/iphone_13_PNG31.png'%}" width="100%" height="350px"alt="" />
+{% endblock %}
+
+{% block phone_info %}
+	<h2> iPhone 13 Pro Max characteristics </h2>
+	<ul style="font-size: 20px; line-height: 45px;">
+		<li>Габариты: 160,8×78,1×7,65 мм, 238 г</li>
+		<li>Дисплей: 6,7", OLED, Super Retina XDR, 2778×1284 , 458 ppi, 120 Гц</li>
+	</ul>
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Read more</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Iphone 13 Pro MAX</h4>
+        </div>
+        <div class="modal-body">
+          <ul style="font-size: 20px; line-height: 45px;">
+				<li>Габариты: 160,8×78,1×7,65 мм, 238 г</li>
+				<li>Дисплей: 6,7", OLED, Super Retina XDR, 2778×1284 , 458 ppi, 120 Гц</li>
+				<li>Процессор: 6-ядерный Apple A15 Bionic</li>
+				<li>Память: 6 ГБ ОЗУ, 128/256/512 ГБ или 1 ТБ ПЗУ</li>
+				<li>Камеры: 12 Мп, f/1,5 (широкоугольная) </li>
+				<li>ОС: iOS 15</li>
+				<li>Price:1000$</li>
+			</ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+{% endblock %}
+
+
+
+	{% block costomerimg %}
+	<br>
+	<br>
+	<br>
+	<img src="{%static 'main/img/user.png'%}" width="80%" height="150px"alt="" />
+	<img style="margin-top:40px;" src="{%static 'main/img/user.png'%}" width="80%" height="150px"alt="" />
+	<img style="margin-top:40px;" src="{%static 'main/img/user.png'%}" width="80%" height="150px"alt="" />
+	{% endblock %}
+
+	{% block costomercom %}
+	<hr style="border: none;
+	    background-color: #787d77;
+	    color: #787d77;
+	    height: 4px; ">
+	
+	{% for comentator in Commentator %}
+
+
+	<h3 style="font-weight: 800;">{{comentator.username}} :</h3>
+	<p style="font-weight: 500;">{{comentator.comment}}</p>
+
+	<p style="text-align: right;">Date:{{comentator.datepub}}</p>
+	<br>
+	<br>
+	{% endfor %}
+
+
+	{% endblock %}

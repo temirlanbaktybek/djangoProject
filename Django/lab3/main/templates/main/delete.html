@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{%block title%}
+	Delete Page
+{%endblock%}
+
+{%block createcostomer%}
+ <div class="container">
+ 	<div class = "features">
+ 		<form method="POST">
+ 			{% csrf_token %}
+ 			<button class = "btn btn-warning">Delete</button>
+ 			
+ 		</form>
+ 	</div>
+ </div>
+{%endblock%}

@@ -1,0 +1,58 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block phone_img %}
+	<img src="{%static 'main/img/imaa (3).png'%}" width="100%" height="240px"alt="" / style="margin-top:20px;">
+{% endblock %}
+
+{% block phone_info %}
+	<h2> Macbook characteristics </h2>
+	<ul style="font-size: 20px; line-height: 45px;">
+		<li>Толщина: 1,56 см
+
+Длина: 30,41 см
+
+Ширина: 21,24 см
+
+Вес: 1,4 кг3</li>
+		<li>Дисплей: 1680×1050,1440×900,1024×640 </li>
+		<li>Чип: Apple M1, 8‑ядерный, 16‑ядерная система Neural Engine</li>
+		<li>Память: 8Гб, 16Гб</li>
+		<li>Накопители2: 256 ГБ, 512ГБ, 1ТБ, 2ТБ</li>
+		<li>Камера: FaceTime HD 720p </li>
+		<li>ОС: macOS</li>
+	</ul>
+	<a href="second.html"><button type="submit"><h5 >Buy</h5></button></a>
+{% endblock %}
+
+
+
+	{% block costomerimg %}
+	<br>
+	<br>
+	<br>
+	<img src="{%static 'main/img/user.png'%}" width="80%" height="150px"alt="" />
+	<img style="margin-top:40px;" src="{%static 'main/img/user.png'%}" width="80%" height="150px"alt="" />
+	<img style="margin-top:40px;" src="{%static 'main/img/user.png'%}" width="80%" height="150px"alt="" />
+	{% endblock %}
+
+	{% block costomercom %}
+	<hr style="border: none;
+	    background-color: #787d77;
+	    color: #787d77;
+	    height: 4px; ">
+	
+	{% for comentator in Commentator %}
+
+
+	<h3 style="font-weight: 800;">{{comentator.username}} :</h3>
+	<p style="font-weight: 500;">{{comentator.commen_mac}}</p>
+
+	<p style="text-align: right;">Date:{{comentator.datepub}}</p>
+	<br>
+	<br>
+	{% endfor %}
+
+
+	{% endblock %}

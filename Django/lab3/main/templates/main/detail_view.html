@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{%block title%}
+	Detail page
+{%endblock%}
+
+
+{%block createcostomer%}
+ <div class="container">
+ 	<div class = "features">
+ 		<h1>{{ costomer.name }}</h1>
+ 		<p>{{ costomer.surname }}</p>
+ 		<p>{{ costomer.username }}</p>
+ 		<a href="{% url 'update' costomer.id %}" class = 'btn btn-warning'>Update</a>
+ 		<a href="{% url 'delete' costomer.id %}" class = 'btn btn-warning'>Delete</a>
+ 	</div>
+ </div>
+{%endblock%}

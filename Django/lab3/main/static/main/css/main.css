@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
+
+body{
+	background-color: #f2f2f2;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+	margin-top: 70px;
+}
+
+
+form.s1{
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Raleway";
+	font-weight:300;
+	color: #333;
+}
+
+p{
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+.centered{
+	text-align: center;
+}
+
+a{
+	color: #f85c37;
+}
+
+
+.d1{
+	padding-top:10px;
+}
+.d1 a{
+	color:grey;
+	
+}
+.d1 a:hover, a:focus{
+	color:white;
+	text-decoration: none;
+	outline: 0;
+}
+.navbar{
+	font-weight:200;
+	font-size:14px;
+	padding-top:0px;
+	padding-bottom:0px;
+	opacity:0.98;
+}
+.navbar-brand{
+	font-size: 22px;
+	letter-spacing:1px;
+}
+
+
+#homepage{
+	margin-top: -10px;
+	padding-top:20px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	background-color:#F5F5F5;
+	min-height: 700px;
+	width: 100%;
+	-webkit-background-size: cover;
+}
+#homepage a:hover, a:focus{
+	color:grey;
+}
+#homepage h1{
+	font-size:45px;
+	font-weight:650;
+	text-align:center;
+	color:black;
+	opacity: 0.9;
+	letter-spacing:1px;
+}
+#homepage h2{
+	font-size:25px;
+	font-weight:650;
+	text-align: center;
+	color:black;
+	opacity: 0.9;
+}
+#homepage p{
+	font-size:20px;
+	font-weight: bold;
+	color:white;
+	opacity:0.7;
+	background:black;
+	margin-top:15px;
+	text-align: center;
+}
+#homepage h5{
+	font-size:15px;
+	font-weight:600;
+	text-align:center;
+	color:white;
+	opacity: 0.9;
+	letter-spacing:1px;
+	
+}
+#homepage button{
+	border-radius: 16px;
+	class = "radius";
+	width:60px;
+	background-color:#99ccff;
+	border-color:#99ccff;
+}
+
+#second{
+	padding-top:10px;
+	text-align:center;
+	min-height:600px;
+	width:100%;
+	background-color:#f3f3f3;
+	background-attachment: relative;
+	background-position: center center;
+}
+.tilt{
+	-webkit-transition:all 0.5s ease;
+	-moz-transition   : all 0.5s ease;
+	-o-transition     : all 0.5s ease;
+	ms-transition     : all 0.5s ease;
+	transition        : all 0.5s ease;
+	
+}
+.tilt:hover{
+	-webkit-transform: rotate(-10deg);
+	-moz-transform   : rotate(-10deg);
+	-o-transform     : rotate(-10deg);
+	-ms-transform    : rotate(-10deg);
+	transform        : rotate(-10deg);
+}
+#tri{
+	padding-top:42px;
+}
+#tri2{
+	padding-top:61px;
+}
+
+#circle {
+    width: 17px;
+    height: 17px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+#ani{
+	margin-top:-76px;
+}
+
+#tele h1{
+	font-size:40px;
+	color:black;
+}
+
+#soc{
+	background-color: grey;
+}
+#soc a{
+	color         :white;
+	font-size     :24px;
+	letter-spacing:10px;
+}
+#soc h5{
+	color: white;
+	font-size:15px;
+}
+
+
+#mesto{
+	background-size:500;
+	text-align:left;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}

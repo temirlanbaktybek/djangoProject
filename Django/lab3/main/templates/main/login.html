@@ -1,0 +1,62 @@
+{%  load static %}
+<!Doctype html>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/login.css' %}">
+    <script src="https://kit.fontawesome.com/4b903266c7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.css' %}">
+    <title>Login</title>
+
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><i class="fa fa-apple" aria-hidden="true"></i> </a>
+          </div>
+          
+          <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="{% url 'zxc' %}">Store</a></li>
+              <li><a href="{% url 'laptop' %}">Laptop</a></li>
+              <li><a href="{% url 'phone' %}">Phone</a></li>
+              <li><a href="#second">Palmtop</a></li>
+              <li><a href="{% url 'contact' %}">Contacts</a></li> 
+              <li><a href="{% url 'login' %}">Login <i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active"> Sign In </h2>
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+        </div>
+
+        <!-- Login Form -->
+        <form name='lll'>
+          <input type="text" id="lll" class="fadeIn second" name="lll" placeholder="login">
+          <input type="text" id="password" class="fadeIn third"  placeholder="password">
+          <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+        <div id="str"></div>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+      <script type="text/javascript" src={% static "main/js/scripts/fff.js" %}></script>
+  </body>
+  </html>

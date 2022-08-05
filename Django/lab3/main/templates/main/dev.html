@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Team members</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<script src="https://kit.fontawesome.com/4b903266c7.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+
+
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><i class="fa fa-apple" aria-hidden="true"></i>	</a>
+					</div>
+					
+					<div class="navbar-collapse collapse navbar-right">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="{% url 'zxc' %}">Store</a></li>
+							<li><a href="{% url 'laptop' %}">Laptop</a></li>
+							<li><a href="{% url 'phone' %}">Phone</a></li>
+							<li><a href="#second">Palmtop</a></li>
+							<li><a href="{% url 'contact' %}">Contacts</a></li>	
+							<li><a href="{% url 'login' %}">Login <i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<br>
+		<br>
+		<br>
+		<h1 style="font-family: fantasy; font-size: 65px; text-align: center; font-weight: 120;">Contacts</h1>
+
+		<div style="font-family: monospace;font-size: 25px; text-align: center;">
+			<div>
+				<h1>HEAD Office on the map </h1>
+				<div style="margin-left: 35%;">
+
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27265393a3cf1cd5cf2c7370bcf4bf4c1788b71db9f3ad1a90560fa30df5856d&amp;width=450&amp;height=379&amp;lang=ru_RU&amp;scroll=true"></script>
+
+				</div>
+				<h2>-Addres: Manasa 34</h2>
+				<br>
+				
+			</div>
+
+			<div>
+				<h3>Team Leader</h3>
+				<ul>
+					<li>Phone number: <a href="tel:+7(705)9576842">+7(705)957-68-42</a> </li>
+					<li>Mail address: <a href="">hostofthesite@mail.ru</a></li>
+					<li>Office hours: 9:00 - 18:00</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Developer</h3>
+				<ul>
+					<li>Phone number: <a href="tel:+7(708)8451315">+7(708)845-13-15</a> </li>
+					<li>Mail address: <a href="">developerofsite@mail.ru</a></li>
+					<li>Office hours: 9:00 - 18:00</li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>

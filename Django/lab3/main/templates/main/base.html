@@ -1,0 +1,104 @@
+{%load static%}
+<!Doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="{% static 'main/css/bootstrap.css' %}">
+		
+		<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+		
+		<script src="https://kit.fontawesome.com/4b903266c7.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+		<title> 
+			{% block title %}
+				site title
+			{% endblock %}
+		</title>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><i class="fa fa-apple" aria-hidden="true"></i>	</a>
+					</div>
+					
+					<div class="navbar-collapse collapse navbar-right">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="{% url 'zxc' %}">Store</a></li>
+							<li><a href="{% url 'laptop' %}">Laptop</a></li>
+							<li><a href="{% url 'phone' %}">Phone</a></li>
+							<li><a href="#second">Palmtop</a></li>
+							<li><a href="{% url 'contact' %}">Contacts</a></li>	
+							<li><a href="{% url 'login' %}">Login <i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-lg-6 col-lg-offset-3">
+			{%block tabletitle%}
+				
+			{%endblock%}
+				<table class="table-inverse table">
+				  <thead class="thead-inverse">
+				  	{%block table_button%}
+				  		
+				  	{%endblock%}
+  				    <tr>
+				      {%block thead%}
+
+				      {%endblock%}
+
+				    </tr>
+				  </thead>
+				  <tbody>
+				    {% block content %}
+				    	
+				    {% endblock %}
+				  </tbody>
+				</table>
+		</div>
+
+		<div class="container-fluid">
+			<div class="col-lg-3 col-lg-offset-2">
+				{% block phone_img%}
+
+				{% endblock %}
+			</div>
+			<div class="col-lg-7">
+				{% block phone_info%}
+						
+				{% endblock %}
+			</div>
+		</div>
+
+		<div class="col-lg-8 col-lg-offset-2">
+
+			<div class="col-lg-3">
+				{% block costomerimg%}
+
+				{% endblock %}
+			</div>
+			<div class="col-lg-9">
+			{% block costomercom%}
+
+			{% endblock %}				
+			</div>
+		</div>
+		<div class="col-lg-12">
+			
+		{% block createcostomer %}
+
+		{% endblock %}
+
+		</div>
+	</body>
+	</html>
